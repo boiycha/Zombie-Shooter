@@ -107,7 +107,7 @@
             this.Controls.Add(this.txtKills);
             this.Controls.Add(this.txtAmmo);
             this.Name = "Form1";
-            this.Text = "Zombie Shooter";
+            this.Text = "   ";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDowm);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyIsUp);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();

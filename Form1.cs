@@ -46,15 +46,15 @@ namespace Zombie_Shooter
             {
                 player.Left -= speed;
             }
-            if (goRight == true && player.Left + player.Width < ClientSize.Width)
+            if (goRight == true && player.Left + player.Width < this.ClientSize.Width)
             {
                 player.Left += speed;
             }
-            if (goUp == true && player.Top > 0)
+            if (goUp == true && player.Top > 45)
             {
                 player.Top -= speed;
             }
-            if (goDowm == true && player.Top + player.Height < ClientSize.Height)
+            if (goDowm == true && player.Top + player.Height < this.ClientSize.Height)
             {
                 player.Top += speed;
             }
@@ -115,6 +115,11 @@ namespace Zombie_Shooter
 
         private void ShootBullet(string direction)
         {
+            Bullet shootBullet = new Bullet();
+            shootBullet.direction = direction;
+            shootBullet.bulletLeft = player.Left + (player.Width / 2); //bullet start from the middle of player
+            shootBullet.bulletTop = player.Top + (player.Height / 2);
+            shootBullet.MakeBullet(this);
 
         }
 
