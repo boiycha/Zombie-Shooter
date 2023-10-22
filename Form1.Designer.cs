@@ -29,47 +29,47 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtAmmo = new System.Windows.Forms.Label();
+            this.txtKills = new System.Windows.Forms.Label();
+            this.txtHealth = new System.Windows.Forms.Label();
             this.healthBar = new System.Windows.Forms.ProgressBar();
             this.player = new System.Windows.Forms.PictureBox();
             this.GameTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // txtAmmo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(30, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ammo : 0";
+            this.txtAmmo.AutoSize = true;
+            this.txtAmmo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtAmmo.ForeColor = System.Drawing.Color.White;
+            this.txtAmmo.Location = new System.Drawing.Point(30, 44);
+            this.txtAmmo.Name = "txtAmmo";
+            this.txtAmmo.Size = new System.Drawing.Size(104, 25);
+            this.txtAmmo.TabIndex = 0;
+            this.txtAmmo.Text = "Ammo : 0";
             // 
-            // label2
+            // txtKills
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(351, 44);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 25);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Kills : 0";
+            this.txtKills.AutoSize = true;
+            this.txtKills.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtKills.ForeColor = System.Drawing.Color.White;
+            this.txtKills.Location = new System.Drawing.Point(351, 44);
+            this.txtKills.Name = "txtKills";
+            this.txtKills.Size = new System.Drawing.Size(84, 25);
+            this.txtKills.TabIndex = 1;
+            this.txtKills.Text = "Kills : 0";
             // 
-            // label3
+            // txtHealth
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(624, 44);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Health : ";
+            this.txtHealth.AutoSize = true;
+            this.txtHealth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtHealth.ForeColor = System.Drawing.Color.White;
+            this.txtHealth.Location = new System.Drawing.Point(624, 44);
+            this.txtHealth.Name = "txtHealth";
+            this.txtHealth.Size = new System.Drawing.Size(93, 25);
+            this.txtHealth.TabIndex = 2;
+            this.txtHealth.Text = "Health : ";
             // 
             // healthBar
             // 
@@ -103,9 +103,9 @@
             this.ClientSize = new System.Drawing.Size(922, 653);
             this.Controls.Add(this.player);
             this.Controls.Add(this.healthBar);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtHealth);
+            this.Controls.Add(this.txtKills);
+            this.Controls.Add(this.txtAmmo);
             this.Name = "Form1";
             this.Text = "Zombie Shooter";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyIsDowm);
@@ -118,9 +118,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label txtAmmo;
+        private System.Windows.Forms.Label txtKills;
+        private System.Windows.Forms.Label txtHealth;
         private System.Windows.Forms.ProgressBar healthBar;
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Timer GameTimer;
