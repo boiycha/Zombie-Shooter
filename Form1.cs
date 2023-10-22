@@ -41,6 +41,24 @@ namespace Zombie_Shooter
                 facing = "left";
                 player.Image = Properties.Resources.left;
             }
+            if (e.KeyCode == Keys.Right)
+            {
+                goRight = true;
+                facing = "right";
+                player.Image = Properties.Resources.right;
+            }
+            if (e.KeyCode == Keys.Up)
+            {
+                goUp = true;
+                facing = "up";
+                player.Image = Properties.Resources.up;
+            }
+            if (e.KeyCode == Keys.Down)
+            {
+                goDowm = true;
+                facing = "dowm";
+                player.Image = Properties.Resources.down;
+            }
         }
 
         private void KeyIsUp(object sender, KeyEventArgs e)
